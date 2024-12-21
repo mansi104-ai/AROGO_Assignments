@@ -43,32 +43,32 @@ The dataset contains the following features:
 
 ## Project Structure
 
-Freight_Logistics/
-│
-├── api/
-│ ├── app.py # FastAPI application
-│ ├── predict.html # Frontend HTML file
-│ ├── styles.css # Frontend styling
-│
-├── data/
-│ ├── raw/ # Contains raw dataset
-│ ├── processed/ # Contains processed dataset
-│
-├── models/
-│ ├── model.pkl # Saved best-performing ML model
-│ ├── scaler.pkl # Scaler for preprocessing
-│
-├── notebooks/
-│ ├── eda.ipynb # EDA and feature selection
-│ ├── preprocessing.ipynb # Data preprocessing notebook
-│ ├── model.ipynb # Model training and evaluation
-│
-├── results/
-│ └── *.png # EDA and result visualizations
-│
-├── .gitignore
-├── README.md # Project documentation
-└── requirements.txt # Python dependencies
+Freight_Logistics/ </br>
+│</br>
+├── api/  </br>
+│ ├── app.py  # FastAPI application  </br>
+│ ├── predict.html   # Frontend HTML file  </br>
+│ ├── styles.css   # Frontend styling  </br>
+│  </br>
+├── data/ </br>
+│ ├── raw/   # Contains raw dataset  </br>
+│ ├── processed/   # Contains processed dataset</br>
+│</br>
+├── models/</br>
+│ ├── model.pkl   # Saved best-performing ML model</br>
+│ ├── scaler.pkl   # Scaler for preprocessing</br>
+│</br>
+├── notebooks/</br>
+│ ├── eda.ipynb   # EDA and feature selection </br>
+│ ├── preprocessing.ipynb   # Data preprocessing notebook</br>
+│ ├── model.ipynb   # Model training and evaluation</br>
+│</br>
+├── results/</br>
+│ └── *.png   # EDA and result visualizations</br>
+│</br>
+├── .gitignore</br>
+├── README.md   # Project documentation</br>
+└── requirements.txt   # Python dependencies</br>
 
 ## Project Workflow
 
@@ -173,22 +173,22 @@ The API returns a prediction as:
 
 ### Request
 
-{
-"distance_km": 450,
-"planned_delivery_days": 5,
-"actual_delivery_days": 6,
-"weather_conditions": 0,
-"traffic_conditions": 2,
-"is_long_distance": 1,
-"is_bad_weather": 0,
-"is_heavy_traffic": 1
-}
+{</br>
+"distance_km": 450,</br>
+"planned_delivery_days": 5,</br>
+"actual_delivery_days": 6,</br>
+"weather_conditions": 0,</br>
+"traffic_conditions": 2,</br>
+"is_long_distance": 1,</br>
+"is_bad_weather": 0,</br>
+"is_heavy_traffic": 1</br>
+}</br>
 
 
 ### Response
 
-{
-"prediction": "On-Time"
-}
+{</br>
+"prediction": "On-Time"</br>
+}</br>
 
 

@@ -1,6 +1,17 @@
-# Image Description Web Application
+# Image Descriptor POC Application
 
 This web application allows users to upload an image and receive a text description of its content using a pre-trained image classification model from Hugging Face.
+
+## Available Models
+
+| Model Name     | Model ID                               | Task          |
+| -------------- | -------------------------------------- | ------------- |
+| BLIP Large     | Salesforce/blip-image-captioning-large | image-to-text |
+| GIT Large COCO | microsoft/git-large-coco               | image-to-text |
+| ViT-GPT2       | nlpconnect/vit-gpt2-image-captioning   | image-to-text |
+| BLIP Base      | Salesforce/blip-image-captioning-base  | image-to-text |
+| GIT Base COCO  | microsoft/git-base-coco                | image-to-text |
+| ViT-GPT2 COCO  | ydshieh/vit-gpt2-coco-en               | image-to-text |
 
 ## Technologies Used
 

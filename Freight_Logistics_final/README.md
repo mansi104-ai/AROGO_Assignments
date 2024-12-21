@@ -125,12 +125,12 @@ Freight_Logistics/ </br>
 
 4. **Prepare the Data**
 
--1. Place the raw dataset in `data/raw/`.
--2. Run `notebooks/preprocessing.ipynb` to process and save the dataset in `data/processed/`.
+- Place the raw dataset in `data/raw/`.
+- Run `notebooks/preprocessing.ipynb` to process and save the dataset in `data/processed/`.
 
 5. **Train the Model**
 
-Run `notebooks/model.ipynb` to train the model and save the best-performing model as `model.pkl`.
+  Run `notebooks/model.ipynb` to train the model and save the best-performing model as `model.pkl`.
 
 6. **Start the API**
    ```bash
@@ -148,23 +148,23 @@ Access the API at [http://127.0.0.1:8000/predict](http://127.0.0.1:8000/predict)
 
 ## Use the following JSON payload for predictions:
 
-{
-"distance_km": 120.5,
-"planned_delivery_days": 5,
-"actual_delivery_days": 7,
-"weather_conditions": 1,
-"traffic_conditions": 2,
-"is_long_distance": 1,
-"is_bad_weather": 0,
-"is_heavy_traffic": 1
-}
+{</br>
+"distance_km": 120.5,</br>
+"planned_delivery_days": 5,</br>
+"actual_delivery_days": 7,</br>
+"weather_conditions": 1,</br>
+"traffic_conditions": 2,</br>
+"is_long_distance": 1,</br>
+"is_bad_weather": 0,</br>
+"is_heavy_traffic": 1</br>
+}</br>
 
 
 The API returns a prediction as:
 
-{
-"prediction": "Delayed"
-}
+{</br>
+"prediction": "Delayed"</br>
+}</br>
 
 
 ## Example API Request and Response
@@ -174,14 +174,14 @@ The API returns a prediction as:
 ### Request
 
 {</br>
-"distance_km": 450,</br>
-"planned_delivery_days": 5,</br>
-"actual_delivery_days": 6,</br>
-"weather_conditions": 0,</br>
-"traffic_conditions": 2,</br>
-"is_long_distance": 1,</br>
-"is_bad_weather": 0,</br>
-"is_heavy_traffic": 1</br>
+"distance_km": 450,  </br>
+"planned_delivery_days": 5, </br>
+"actual_delivery_days": 6, </br>
+"weather_conditions": 0, </br>
+"traffic_conditions": 2, </br>
+"is_long_distance": 1, </br>
+"is_bad_weather": 0, </br>
+"is_heavy_traffic": 1 </br>
 }</br>
 
 
